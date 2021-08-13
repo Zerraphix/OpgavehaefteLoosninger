@@ -37,6 +37,17 @@ namespace OpgavehæfteLøsninger
                 Console.WriteLine("Hvis man vil ud af programmet kan man skrive exit");
                 //Konvertere til upper så det ligegyldig hvordan de skriver.
                 opgave = Console.ReadLine().ToUpper();
+                Opgave1_1 opgave1_1 = new Opgave1_1();
+                Opgave1_2 opgave1_2 = new Opgave1_2();
+                Opgave1_3 opgave1_3 = new Opgave1_3();
+                Opgave1_4 opgave1_4 = new Opgave1_4();
+                Opgave2_1 opgave2_1 = new Opgave2_1();
+                Opgave2_3 opgave2_3 = new Opgave2_3();
+                Opgave3_1 opgave3_1 = new Opgave3_1();
+                Opgave3_2 opgave3_2 = new Opgave3_2();
+                Opgave4 opgave4 = new Opgave4();
+                Opgave4_1 opgave4_1 = new Opgave4_1();
+                Opgave4_5 opgave4_5 = new Opgave4_5();
                 switch (opgave)
                 {
                     case "1_1":                       
