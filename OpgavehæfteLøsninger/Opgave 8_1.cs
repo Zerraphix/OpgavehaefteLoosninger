@@ -11,7 +11,7 @@ namespace OpgavehæfteLøsninger
         public void InputMethod()
         {
             Console.Clear();
-            string[] måneder = { "Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"};
+            List<string> måneder = new List<string>() { "Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December" };
             Console.WriteLine("*** Fun With Months ***");
             Console.WriteLine("Her er alle månederne:");
             foreach (string m in måneder)
@@ -44,11 +44,11 @@ namespace OpgavehæfteLøsninger
             Console.ReadKey(true);
 
             var NewCalender = "";
+            måneder.Add("Bichat");
             foreach (string m in måneder)
             {
                 NewCalender += m + " ";
             }
-            NewCalender = NewCalender + "Bichat";
             Console.WriteLine("Her er alle månederne, med en trettende måned");
             Console.WriteLine(NewCalender);
             Console.ReadKey(true);
