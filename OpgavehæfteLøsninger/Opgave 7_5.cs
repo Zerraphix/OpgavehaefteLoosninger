@@ -17,20 +17,26 @@ namespace OpgavehæfteLøsninger
             Console.Write("Write a full name: ");
             str = Console.ReadLine();
 
-            Flipper(str);
+            string Flipped = Flipper(str);
 
-            //OutputMethod(name);
+            OutputMethod(Flipped);
         }
-        void Flipper(string name)
+        string Flipper(string name)
         {
             var words = name.Split(' ');
+            var flipped = "";
 
+            //Here it takes the last word and takes it out to the new var
             for (int i = 0; i < words.Length; i++)
             {
-                System.Console.Write(words[words.Length - i - 1]);
+                flipped += (words[words.Length - i - 1] + " ");
             }
-            Console.WriteLine(words);
-            Console.ReadKey();
+            return flipped;
+        }
+        void OutputMethod(string flipped)
+        {
+            Console.WriteLine(flipped);
+            Console.ReadKey(true);
         }
     }
 }
